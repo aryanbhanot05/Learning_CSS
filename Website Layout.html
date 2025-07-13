@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise on make a demo website layout</title>
+
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: rgb(241, 230, 251);
+        }
+
+        main {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        header {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: sticky;
+            top: 0;
+            z-index: 1; */
+        }
+
+        header>img {
+            width: 70px;
+            display: inline;
+        }
+
+        header>h1 {
+            display: inline;
+            color: white;
+            font-size: xx-large;
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: sticky;
+            top: 0;
+            z-index: 1; */
+        }
+
+        .nav>a {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+
+        .nav>a:hover {
+            background-color: rgb(52, 51, 51);
+            text-shadow: 1px 1px 20px white;
+            font-size: 18px;
+            transition: background-color 0.3s ease, font-size 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        section {
+            background-color: rgb(224, 192, 255);
+            margin: 1%;
+        }
+
+        section>section {
+            display: inline-block;
+            border-radius: 10px;
+            width: 45%;
+            margin: 2%;
+            background-color: rgb(225, 141, 255);
+        }
+
+        section>section>p {
+            padding: 10px;
+        }
+
+        article {
+            margin: 20px;
+            background-color: rgb(225, 141, 255);
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        div {
+            position: fixed;
+            bottom: 15px;
+            right: 1px;
+        }
+
+        div>img {
+            width: 100px;
+        }
+
+        footer {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer>a {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+
+        footer>a:hover {
+            background-color: rgb(52, 51, 51);
+            text-shadow: 1px 1px 20px white;
+            font-size: 18px;
+            transition: background-color 0.3s ease, font-size 0.3s ease, text-shadow 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="https://logos-world.net/wp-content/uploads/2023/05/Aquaman-Symbol-500x281.png" alt="Logo">
+
+            <h1>Arydew Creations</h1>
+        </header>
+
+        <nav class="nav">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Feedback">Feedback</a>
+        </nav>
+    </main>
+
+
+    <section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit commodi optio dolorem libero odio vero illo,
+                blanditiis quasi voluptate! Est autem eaque cumque veniam ea soluta libero ratione! Quia possimus totam
+                odio nam necessitatibus doloribus libero, quibusdam iste! Accusamus quam ratione illo libero ab dolore?
+            </p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit commodi optio dolorem libero odio vero illo,
+                blanditiis quasi voluptate! Est autem eaque cumque veniam ea soluta libero ratione! Quia possimus totam
+                odio nam necessitatibus doloribus libero, quibusdam iste! Accusamus quam ratione illo libero ab dolore?
+            </p>
+        </section>
+
+    </section>
+    <article>
+        <h2>Duggu Don Rocks! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique est,
+            repellendus nostrum impedit enim. Veniam provident itaque a inventore fugiat cum voluptatibus
+            consequatur ipsa esse, quaerat laboriosam. Cum ut accusantium praesentium deleniti iure aspernatur
+            corrupti libero facere odio facilis nisi amet est hic nihil laudantium similique eaque qui, tenetur
+            officiis. Ea voluptate totam quasi, deleniti consequatur autem quia aliquid alias et magnam hic velit
+            porro minima repellat. Ipsa sint laboriosam aliquid, assumenda maiores nulla facilis fuga tenetur,
+            nihil, distinctio officiis ducimus porro velit. Nihil id optio blanditiis quam, minima cupiditate. Culpa
+            atque dignissimos vero asperiores beatae exercitationem tempora incidunt dicta deleniti reprehenderit
+            amet ullam earum laborum eius, ea vel facere. Consequuntur quas nobis asperiores itaque laborum, nihil
+            at velit error qui eligendi consectetur aspernatur adipisci voluptates sint dignissimos eveniet
+            praesentium. Ex temporibus perferendis voluptas a totam consequuntur, et placeat alias eveniet harum
+            facere veniam id eligendi fugiat rem quam doloribus vel sunt laboriosam? Ipsa rerum autem, eaque ratione
+            quaerat sunt, distinctio commodi quasi consequatur ipsum placeat. Itaque omnis vero, repudiandae commodi
+            facere, placeat impedit ipsum, deserunt tempora earum totam neque? Dolorum consectetur distinctio
+            temporibus beatae incidunt iste fuga ab! Qui commodi obcaecati quaerat neque quasi animi, quisquam et
+            beatae!</h2>
+    </article>
+
+    <div>
+        <img src="https://logos-world.net/wp-content/uploads/2023/05/Aquaman-Symbol-500x281.png" alt="Logo">
+    </div>
+
+    <footer>
+        <a href="#Privacy Policy">Privacy Policy</a>
+        <a href="#Refunds">Refunds</a>
+        <a href="#Achievements">Achievements</a>
+        <a href="#FAQ's">FAQ's</a>
+    </footer>
+    
+</body>
+
+</html>
